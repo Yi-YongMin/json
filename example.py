@@ -21,24 +21,28 @@
 # while True:
 #     print("Crtl+C %d" %i)
 #     i=i+1
-for i in range(2,10):
-    for j in range(1,10):
-        print(i*j,end=" ")
-    print("") #print는 디폴트값으로 줄바꿈이 세팅되어있다.
-a=[1,2,3,4]
-result=[num*3 for num in a] #리스트 컴프리헨션
+# for i in range(2,10):
+#     for j in range(1,10):
+#         print(i*j,end=" ")
+#     print("") #print는 디폴트값으로 줄바꿈이 세팅되어있다.
+# a=[1,2,3,4]
+# result=[num*3 for num in a] #리스트 컴프리헨션
 
-def add_many(*args):
-    result =0
-    for i in args:
-        result=result+i
-    return result
-print(add_many(1,2,3,4,5,6,7))
+# def add_many(*args):
+#     result =0
+#     for i in args:
+#         result=result+i
+#     return result
+# print(add_many(1,2,3,4,5,6,7))
 
-def print_kword(**kv):
-    print(kv)
-print_kword(a=1,b=2,c='a')
+# def print_kword(**kv):
+#     print(kv)
+# print_kword(a=1,b=2,c='a')
 
-f='C:\\pydata\\json\\name.txt'
+# f='C:\\pydata\\json\\name.txt'
 
-print(f.replace("\\","/"))
+# print(f.replace("\\","/"))
+import sys
+args=sys.argv[1:]
+for i in args:
+    print(i)
