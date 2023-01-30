@@ -10,11 +10,13 @@
 #         for k, item3 in enumerate(lv000):
 #             final=item1 +' '+item2+' '+item3+'\n'
 #             f.write(final)
-import pandas as pd
-df=pd.read_csv('C:/pydata/json/name.txt',sep='\ ',encoding='utf-8')
-df.to_excel('level.xlsx',index=False)
+# import pandas as pd
+# df=pd.read_csv('C:/pydata/json/name.txt',sep='\ ',encoding='utf-8')
+# df.to_excel('level.xlsx',index=False)
 
-
+import jump_to_python as jp
+a=jp.FourCal(4,2)
+print(a.add())
 # for pathx, dirs, files in os.walk(path):
 #     if files is True:
 #         continue
