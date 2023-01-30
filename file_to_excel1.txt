@@ -1,4 +1,3 @@
-level1 level2 level3
 NegativeDB_구름 강원도강릉시강동면모전리_BC002001 001_없음
 NegativeDB_구름 강원도강릉시강동면모전리_BC002001 002_없음
 NegativeDB_구름 강원도강릉시강동면모전리_BC002001 003_없음

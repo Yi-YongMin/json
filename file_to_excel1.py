@@ -1,8 +1,7 @@
-# import os
-# path='Y:/018_비식별화'
-# lv0=os.listdir(path)
-# f=open("C:/pydata/json/name.txt",'w')
-# j=[]
+import os
+path='Y:/018_비식별화'
+lv0=os.listdir(path)
+f=open("C:/pydata/json/file_to_excel1.txt",'w')
 # for i, item1 in enumerate(lv0):
 #     lv00=os.listdir(path+'/'+item1)
 #     for j, item2 in enumerate(lv00):
@@ -10,13 +9,26 @@
 #         for k, item3 in enumerate(lv000):
 #             final=item1 +' '+item2+' '+item3+'\n'
 #             f.write(final)
+
+#간략화.
+
+for item1 in lv0:
+    lv00=os.listdir(path+'/'+item1)
+    for item2 in lv00:
+        lv000=os.listdir(path+'/'+item1+'/'+item2)
+        for item3 in lv000:
+            final=item1 +' '+item2+' '+item3+'\n'
+            f.write(final)
+
 # import pandas as pd
 # df=pd.read_csv('C:/pydata/json/name.txt',sep='\ ',encoding='utf-8')
 # df.to_excel('level.xlsx',index=False)
 
-import jump_to_python as jp
-a=jp.FourCal(4,2)
-print(a.add())
+
+# import jump_to_python as jp
+# a=jp.FourCal(4,2)
+# print(a.add())
+
 # for pathx, dirs, files in os.walk(path):
 #     if files is True:
 #         continue

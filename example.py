@@ -42,9 +42,12 @@
 # f='C:\\pydata\\json\\name.txt'
 
 # print(f.replace("\\","/"))
-import sys
-args=sys.argv[1:]
-for i in args:
-    print(i)
-
-    
+# import sys
+# args=sys.argv[1:]
+# for i in args:
+#     print(i)
+a=['3','4','5']
+f=open("C:/pydata/json/newfile.txt","w")
+for i in a:
+    f.write(i+"\n")
+f.close
